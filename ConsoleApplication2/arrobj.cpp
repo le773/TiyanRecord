@@ -1,6 +1,7 @@
-#include <iostream>
+﻿#include <iostream>
 #include <array>
 #include <string>
+#include <malloc.h>
 
 using namespace std;
 
@@ -67,29 +68,55 @@ int main7() {
 }
 
 
+/*
+* error
+void replaceSpace(char *str, int length) {
+        int i = 0;
+        int j = 0;
+        int nSpace = 0;
+        char *pStr = NULL;
+        pStr = (char*)malloc(sizeof(char)*length * 3);
+        for (i = 0, j = 0; i<length; i++, j++) { 
+            if (' ' == str[i]) {
+                pStr[j] = '\%';
+                pStr[++j] = '2';
+                pStr[++j] = '0';
+            } else {
+                pStr[j] = str[i]; 
+            } 
+        }
+
+        for (int k = 0; k < j; k++) {
+            str[k] = pStr[k];
+        }
+
+        for (int i = 0; i < j; i++) {
+            cout << *(str + i) << endl;
+        }
+        //free(pStr);
+}
+*/
 
 void replaceSpace(char *str, int length) {
-    char* str1 = "";
-    char* emptyone = "20%";
-    int j = 0;
-    for (int i = 0; i < length; i++) {
-        cout << *(str + i) << endl;
-        if (*(str + i) != ' ') {
-            *(str1 + j) = *(str + i);
-            j++;
-        }
-        else {
-            strcat(str1, emptyone);
-            j += strlen(emptyone);
-        }
+    if (str == NULL) {
+        return;
     }
-    string ss(str1);
-    cout << ss << endl;
+    string newString;
+    for (int i = 0; i < length; i++) {
+        if (str[i] == ' ') {
+            newString = newString + "%20";
+            continue;
+        }
+        newString += str[i];
+    }
+    if (newString.empty()) {
+        cout << "newString empty" << endl;
+    }
 
+    cout << newString << endl;
 }
-
 int main() {
-    char* strone = "We Are Happy";
+    char* strone = "hello world";
     // cout << *strone << endl;
     int lengthone = strlen(strone);
     replaceSpace(strone, lengthone);
