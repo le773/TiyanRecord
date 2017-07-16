@@ -152,6 +152,7 @@
     <ClInclude Include="BinSearchTree.h" />
     <ClInclude Include="CharDebug.h" />
     <ClInclude Include="coordin.h" />
+    <ClInclude Include="Debug.h" />
     <ClInclude Include="EffectCpp20.h" />
     <ClInclude Include="MaxHeap.h" />
     <ClInclude Include="SocketProtocol.h" />
@@ -164,6 +165,7 @@
     <ClCompile Include="BinSearchTree.cpp" />
     <ClCompile Include="CharDebug.cpp" />
     <ClCompile Include="ConsoleApplication2.cpp" />
+    <ClCompile Include="Debug.cpp" />
     <ClCompile Include="EffectCpp20.cpp" />
     <ClCompile Include="file2.cpp" />
     <ClCompile Include="mainclass.cpp" />

@@ -45,7 +45,7 @@ void printDisplayYiny(const Window& w) {
     w.display();
 }
 
-int main() {
+int main_EffectCpp20() {
     cout << "debug" << endl;
 
     Window* w = new Window;
