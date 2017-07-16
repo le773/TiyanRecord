@@ -154,6 +154,7 @@
     <ClInclude Include="coordin.h" />
     <ClInclude Include="Debug.h" />
     <ClInclude Include="EffectCpp20.h" />
+    <ClInclude Include="EffectCpp23.h" />
     <ClInclude Include="MaxHeap.h" />
     <ClInclude Include="SocketProtocol.h" />
     <ClInclude Include="SortHeap.h" />
@@ -167,6 +168,7 @@
     <ClCompile Include="ConsoleApplication2.cpp" />
     <ClCompile Include="Debug.cpp" />
     <ClCompile Include="EffectCpp20.cpp" />
+    <ClCompile Include="EffectCpp23.cpp" />
     <ClCompile Include="file2.cpp" />
     <ClCompile Include="mainclass.cpp" />
     <ClCompile Include="MaxHeap.cpp" />
