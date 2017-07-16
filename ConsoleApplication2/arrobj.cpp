@@ -115,7 +115,7 @@ void replaceSpace(char *str, int length) {
 
     cout << newString << endl;
 }
-int main() {
+int main8() {
     char* strone = "hello world";
     // cout << *strone << endl;
     int lengthone = strlen(strone);
